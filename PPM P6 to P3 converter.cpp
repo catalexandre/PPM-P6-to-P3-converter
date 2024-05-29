@@ -25,6 +25,7 @@ int main()
     newImage << "P3" << endl;
 
     int width, height, maxValue;
+    image.ignore(256, ' ');
     image >> width >> height >> maxValue;
     newImage << width << ' ' << height << endl << maxValue << endl;
 
